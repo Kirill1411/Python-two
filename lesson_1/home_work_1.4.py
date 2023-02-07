@@ -10,11 +10,13 @@
 
 lst = ['процент', 'процента', 'процентов']
 num = int(input('Введите число от 1 до 100: '))
-if num == 1:
-    print(f'{num} {lst[0]}')
-elif 2 < num < 5:
-    print(f'{num} {lst[1]}')
-else:
+if 5 <= num < 21:
     print(f'{num} {lst[2]}')
-
-
+else:
+    number = num % 10
+    if number == 1:
+        print(f'{num} {lst[0]}')
+    elif 2 <= number < 5:
+        print(f'{num} {lst[1]}')
+    else:
+        print(f'{num} {lst[2]}')
